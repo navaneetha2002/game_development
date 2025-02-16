@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Diamond Heist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="game-container"  class="game-container">
+        <p id="story-text">You are a master thief planning a diamond heist. What is your first move?</p>
+        <div id="choices-container"></div>
+    </div>
+
+    <div id="story-card">
+        <img id="story-image" src="" alt="Story Image" style="display: none;">
+    </div>
+   
+    <audio id="bg-music" loop>
+        <source src="./music/background.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="start-screen" style="text-align: center; padding: 50px;">
+        <div id="start-content">
+            <h1> THE DIAMOND RUSH</h1>
+            <button onclick="startGame()">Start HEIST</button>
+        </div>
+        
+    </div>
+    <div id="timer-container">
+        Time Left : <span id="timer">15</span>s
+    </div>
+    
+    
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
